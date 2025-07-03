@@ -39,11 +39,3 @@ window.addEventListener('scroll', function() {
     });
 });
 
-// Show current year in footer automatically
-document.addEventListener('DOMContentLoaded', function() {
-    const footer = document.querySelector('footer p');
-    if (footer) {
-        const year = new Date().getFullYear();
-        footer.innerHTML = `&copy; ${year} Your Name`;
-    }
-});
