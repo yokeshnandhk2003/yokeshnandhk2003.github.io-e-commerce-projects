@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <img src="Yokesh pic.jpg"  class="profile-photo" style="float: right; margin-left: 10px;">
-        <h1 style="color: white;">I'm Yokesh </h1>
-        <p style="color: white;">Web Developer | Designer | Programmer|Email: yokeshnandhk@gmail.com|Phone: +91 9344946232|</p>
-    
-    </header>
-    <nav>
-        <ul>
-              <marquee behavior="scroll" direction="left" scrollamount="6" style="color: white; font-size: 20px;">
-                🚀 Welcome to my portfolio! 🚀 Explore my projects, learn about my skills, and let's connect! 
-                🌟 I'm currently looking for opportunities to collaborate and innovate.
-               🚀 Ready to join and work — Let's build something amazing together!
-            </marquee>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main> 
-        <section id="home" class="home-section">
-            <h2>Welcome to My Portfolio!</h2>
-            <p>
-                Explore my work, learn more about me, and feel free to get in touch!
-            </p>
-        </section>
-        <section id="about" style="color: white;">
-            <h2 >About Me</h2>
-            <p >
-             Hi, I'm Yokesh N 👨‍💻, a passionate Full-Stack Web Developer from Chennai, Tamil Nadu, India. I completed my B.E. in Electronics and Communication Engineering (2021–2025) from St. Joseph College of Engineering, Chennai 🎓. I specialize in HTML, CSS, JavaScript, and React.js, and I’m currently learning Java and Spring Boot to strengthen my backend skills ☕. I’ve built projects like a Netflix clone, an e-commerce website, a responsive portfolio, and BookSky, a UI-focused frontend app. During my internship at Cadept Techys, I gained hands-on experience in real-world development 🌐. I’m comfortable using VS Code, IntelliJ IDEA, and Eclipse, along with tools like Git, GitHub. I'm eager to join a forward-thinking team and contribute to impactful digital solutions 🚀..
-            </p>
-        </section>
-        <section id="projects" style="color: white;">
-            <h2> Projects </h2>
-            <ul>
-                <li>
-                    <h3 >Project 1</h3>
-                    <p>Zara-Inspired eCommerce Website (Frontend Project)
-                   I developed a responsive eCommerce website inspired by brands like Zara using HTML, CSS, and JavaScript. The project features a modern UI, product listing pages, image sliders, a shopping cart interface (UI only), and interactive navigation. This frontend-only project showcases my skills in layout design, responsiveness, and DOM manipulation.</p>
-                      <button><a href="https://yokeshnandhk2003.github.io/yokeshnandhk2003.github.io-e-commerce-projects/ZaraWeb" class="no-underline" target="_blank">Live Demo</a></button> 
-                </li>
-                <li>
-                    <h3>Project 2</h3>
-                    <p>I created a responsive frontend clone of Netflix using HTML, CSS, and JavaScript. The project replicates the modern UI of Netflix, including a landing page with a background video, navbar, featured banners, and sections for trending shows. It focuses on design, layout, and interactive UI elements—built without any backend or streaming functionality.</p>
-                   <button><a href="https://yokeshnandhk2003.github.io/yokeshnandhk2003.github.io-e-commerce-projects/netflix%20clone/" class="no-dash" target="_blank">Live Demo</a></button> 
-                </li>
-            </ul>
-        </section>
-      
-          <section id="contact" style="color: white;"> 
-            <h2>Contact</h2>
-            <form id="contactForm">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-            <p id="formMessage"></p>
-        </section> 
-    </main>
+  <header>
+    <img src="Yokesh pic.jpg" class="profile-photo" alt="Profile Photo" />
+    <h1>I'm Yokesh</h1>
+    <p>Web Developer | Designer | Programmer | Email: yokeshnandhk@gmail.com | Phone: +91 9344946232</p>
+  </header>
 
-         <footer>
-        <p>©Yokesh Nandhk</p>
-        <p>Connect with me on social media:</p>
-        <a href=" https://www.linkedin.com/in/yokesh-nandhk-2a0413290" ><img src="https://img.icons8.com/color/48/linkedin.png  " ></a>
-        <a href=" https://github.com/yokeshnandhk2003" ><img src=https://img.icons8.com/material-rounded/50/github.png ></a>
-         </footer>
-               <script src="main.js"></script>
+  <div class="scroll-banner">
+    <marquee behavior="scroll" direction="left" scrollamount="6" style="color: white; font-size: 20px;">
+      🚀 Welcome to my portfolio! 🚀 Explore my projects, learn about my skills, and let's connect!
+      🌟 I'm currently looking for opportunities to collaborate and innovate. 🚀 Ready to build something amazing!
+    </marquee>
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">I'm Yokesh</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home" class="home-section">
+      <h2>Welcome to My Portfolio!</h2>
+      <p>Explore my work, learn more about me, and feel free to get in touch!</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Yokesh N 👨‍💻, a passionate Full-Stack Web Developer from Chennai, Tamil Nadu, India...
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <h3>Project 1: Zara-Inspired eCommerce Website</h3>
+          <p>Built with HTML, CSS, JS. Features modern UI, product listing, shopping cart (UI).</p>
+          <button><a href="https://yokeshnandhk2003.github.io/yokeshnandhk2003.github.io-e-commerce-projects/ZaraWeb" class="no-underline" target="_blank">Live Demo</a></button>
+        </li>
+        <li>
+          <h3>Project 2: Netflix Clone</h3>
+          <p>Responsive UI clone with landing page, video bg, trending sections (Frontend only).</p>
+          <button><a href="https://yokeshnandhk2003.github.io/yokeshnandhk2003.github.io-e-commerce-projects/netflix%20clone/" class="no-dash" target="_blank">Live Demo</a></button>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>yokeshnandhk</p>
+    <p>Connect with me on social media:</p>
+    <a href="https://www.linkedin.com/in/yokesh-nandhk-2a0413290"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" /></a>
+    <a href="https://github.com/yokeshnandhk2003"><img src="https://img.icons8.com/material-rounded/50/github.png" alt="GitHub" /></a>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
-   
