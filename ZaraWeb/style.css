@@ -150,36 +150,86 @@ body{
     justify-content: center;
     color: white;
     text-align: left;
+    position: relative;
+    z-index: 1;
 }
+
+/* Optional dark overlay to improve text visibility */
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* darkens background image */
+    z-index: -1;
+}
+
+/* Text content inside hero */
+#hero .hero-text {
+    max-width: 600px;
+    z-index: 2;
+}
+
+#hero .hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#hero .hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    color: #00c2a8;
+}
+
+#hero .hero-text p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    margin: 10px 0 20px;
+}
+
+#hero .hero-text button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ✅ Mobile View Fix */
 @media (max-width: 768px) {
     #hero {
-        padding: 0 20px;
+        padding: 20px;
+        height: auto;
         text-align: center;
         align-items: center;
         background-position: center;
     }
+
+    #hero .hero-text {
+        max-width: 100%;
+    }
+
+    #hero .hero-text h2 {
+        font-size: 1.5rem;
+    }
+
+    #hero .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    #hero .hero-text p {
+        font-size: 1rem;
+    }
+
+    #hero .hero-text button {
+        font-size: 0.9rem;
+    }
 }
 
 
-#hero h4{
-    padding-bottom: 15px;
-}
-
-#hero h1{
-    color: #088178;
-}
-
-#hero button{
-    background-image: url("image/button.png");
-    background-color: transparent !important;
-    color: #088178;
-    border: 0;
-    padding: 14px 80px 14px 65px;
-    background-repeat: no-repeat;
-    cursor: pointer !important;
-    font-weight: 700;
-    font-size: 15px;
-}
 
 #feature{
     display: flex;
