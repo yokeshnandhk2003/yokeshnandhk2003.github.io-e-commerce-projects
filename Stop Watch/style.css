@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background: #edeaed;
+    font-family: "Courier Prime", monospace;
+    font-style: italic;
+    background-image: url(stopwatch_img/images/watch.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.stopwatch{
+    width: 90%;
+    max-width: 600px;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 40px 0;
+    color: #fff;
+    margin: 200px auto 0;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    
+}
+.stopwatch h1{
+ font-size: 64px;
+ margin-top: 60px;
+ font-weight: 300;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+}
+.buttons img{
+    width: 50px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.buttons img:nth-child(2){
+    width: 80px;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-position: top;
+    font-size: 14px;
+  }
+
+  .stopwatch {
+    width: 95%;
+    padding: 20px 10px;
+    margin: 100px auto 0;
+    border-radius: 20px;
+  }
+
+  .stopwatch h1 {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    padding-left: 0;
+    gap: 15px;
+  }
+
+  .buttons img {
+    width: 40px;
+    margin: 10px 0;
+  }
+
+  .buttons img:nth-child(2) {
+    width: 60px;
+  }
+}
