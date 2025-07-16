@@ -79,6 +79,6 @@ body{
 .toast.error::after{
     background: red;
 }
-.toast.Invalid::after{
+.toast.invalid i{
     background: orange;
 }
