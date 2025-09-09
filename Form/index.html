@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Signup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form id="form" class="signup-form">
+      <table border="0">
+        
+        <tr >
+          <th colspan="2">
+            <img src="image/logoo.png" alt="Netflix Logo" width="50" height="50"
+                 style="background: rgba(0,0,0,1); opacity: 0.6; border-radius: 20px;">
+          </th>
+          <td colspan="2">
+            <p>Already have an account?
+              <a href="sign.html" class="btn">Sign In</a>
+            </p>
+          </td>
+        </tr>
+        
+
+        <tr>
+          <th colspan="2"><h2>Sign Up</h2></th>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="input-group">
+              <input type="text" id="firstName" placeholder="First Name" required>
+              <div class="error"></div>
+            </div>
+          </td>
+          <td>
+            <div class="input-group">
+              <input type="text" id="lastName" placeholder="Last Name" required>
+              <div class="error"></div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="input-group">
+              <input type="password" id="password" placeholder="Create New Password" required>
+              <div class="error"></div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="input-group">
+              <input type="email" id="email" placeholder="Email" required>
+              <div class="error"></div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="input-group">
+              <input type="tel" id="mobile" placeholder="Mobile" required>
+              <div class="error"></div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="submit">Continue</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
