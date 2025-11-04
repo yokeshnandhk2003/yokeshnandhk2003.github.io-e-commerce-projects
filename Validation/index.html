@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form"  onsubmit="return validate()">
+        <table class="table">
+        <tr>
+            <td>
+                <input type="text" id="name" name="name" placeholder="Planet name">
+                <br><span id="nameerror">**Planet is name must contain one vowel and one digit required**</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="count" name="count" placeholder="Antenna Count">
+                <br><span id="counterror">**Enter even count of digits only**</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               <input type="text" id="AlienId" name="AlienId" placeholder="Enter Alien ID" onkeypress="return onlyNumber(event)">
+               <br><span id="iderror">**Alien ID is required**</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <input type="text" id="Phrase" name="Phrase" placeholder="Human Phrase">
+              <br><span id="Phraseerror">**Enter HumanPhrase**</span>
+            </td>
+                  
+        </tr>
+        <tr>
+            <td>
+                <input type="date" id="future">
+                <br><span id="dateerror">**Enter Future Date**</span>
+            </td>
+        </tr>
+              
+    
+        </table>
+         <button id="btn">Submit</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
